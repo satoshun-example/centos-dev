@@ -1,0 +1,77 @@
+rpm_packages:
+  - epel-release
+  - "http://rpms.famillecollet.com/enterprise/remi-release-7.rpm"
+  - "http://dl.iuscommunity.org/pub/ius/stable/CentOS/7/x86_64/ius-release-1.0-14.ius.centos7.noarch.rpm"
+  - "https://dev.mysql.com/get/mysql-community-release-el7-5.noarch.rpm"
+
+yum_packages:
+  - blas-devel
+  - bzip2-devel
+  - cyrus-sasl-devel
+  - gcc-gfortran
+  - lapack-devel
+  - libcurl-devel
+  - libevent-devel
+  - libjpeg
+  - libjpeg-devel
+  - libpng
+  - libpng-devel
+  - libxslt-devel
+  - make
+  - ncurses-devel
+  - openssl
+  - openssl-devel
+  - perl-devel
+  - readline-devel
+  - rsyslog
+  - sqlite-devel
+  - tk-devel
+  - zlib-devel
+
+server_packages:
+  - bash-completion
+  - bind-utils
+  - glances
+  - htop
+  - lsof
+  - perf
+  - sysstat
+  - tcpdump
+  - telnet
+  - tig
+  - vim
+  - wget
+
+web_packages:
+  # python
+  - python36u
+  - python36u-wheel
+  - python36u-tools
+  - python36u-devel
+  - python36u-libs
+  - python36u-setuptools
+
+  # go
+  - mercurial
+  - golang
+
+  # db
+  - mysql-server
+  - mysql-devel
+  - MySQL-python
+  - redis
+  - memcached
+  - libmemcached-devel
+
+  # server
+  - nginx
+
+  # etc
+  - docker-io
+  - supervisor
+
+services:
+  - nginx
+  - mysqld
+  - docker
+  - supervisord
