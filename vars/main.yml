@@ -5,6 +5,7 @@ rpm_packages:
   - "https://dev.mysql.com/get/mysql-community-release-el7-5.noarch.rpm"
 
 yum_packages:
+  - "@Development tools"
   - blas-devel
   - bzip2-devel
   - cyrus-sasl-devel
@@ -41,37 +42,3 @@ server_packages:
   - tig
   - vim
   - wget
-
-web_packages:
-  # python
-  - python36u
-  - python36u-wheel
-  - python36u-tools
-  - python36u-devel
-  - python36u-libs
-  - python36u-setuptools
-
-  # go
-  - mercurial
-  - golang
-
-  # db
-  - mysql-server
-  - mysql-devel
-  - MySQL-python
-  - redis
-  - memcached
-  - libmemcached-devel
-
-  # server
-  - nginx
-
-  # etc
-  - docker-io
-  - supervisor
-
-services:
-  - nginx
-  - mysqld
-  - docker
-  - supervisord

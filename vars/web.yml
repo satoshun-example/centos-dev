@@ -1,0 +1,34 @@
+web_packages:
+  # python
+  - python35u
+  - python35u-tools
+  - python35u-devel
+  - python35u-libs
+  - python35u-setuptools
+  - python35u-pip
+
+  # # go
+  - mercurial
+  # - golang
+
+  # db
+  # - mysql-server
+  # - mysql-devel
+  # - MySQL-python
+  - redis
+  - memcached
+  - libmemcached-devel
+
+  # # server
+  - nginx
+
+  # etc
+  - docker
+  - supervisor
+
+services:
+  - nginx
+  # - mysqld
+  - docker
+  - memcached
+  - supervisord

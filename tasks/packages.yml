@@ -6,9 +6,6 @@
 - name: yum update
   yum: name=* state=latest
 
-- name: install the 'Development tools' package group
-  yum: name="@Development tools" state=present
-
 - name: install packages from yum
   yum: name={{ item }} state=present
   with_items: yum_packages
